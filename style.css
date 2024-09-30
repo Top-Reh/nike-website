@@ -1,0 +1,481 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+button {
+    cursor: pointer;
+}
+
+.menu {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(158, 158, 158);
+}
+
+.navbar {
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.search {
+    width: 290px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 30px;
+}
+
+.search  i {
+    font-size: 20px;
+    color: rgb(4, 4, 4);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search  i:hover {
+    background-color: rgb(205, 205, 205);
+}
+
+.searching{
+    width: 150px;
+    height: 34px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 17px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    color: black;
+    padding: 0;
+}
+
+.searching:hover {
+    background-color: rgb(217, 216, 216);
+}
+
+.searching i {
+    border: none;
+    border-radius: 50%;
+    width: 34px;
+    height: 100%;
+    margin-right: 12px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+}
+
+.searching i:hover {
+    background-color: rgb(205, 205, 205);
+}
+
+.searching .searchinput {
+    width: 80%;
+    height: 100%;
+    background-color: white;
+}
+
+.licontainer a {
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 12px;
+}
+
+.menuch {
+    display: flex;
+    justify-content: center;
+}
+
+.licontainer a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.menuoptions {
+    width: 100%;
+    height: auto;
+    transition: all 1.5s ease;
+    display: none;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding: 50px 100px;
+    background-color: rgb(244, 243, 243);
+    position: absolute;
+    top: 100%;
+}
+
+.menuoptions .contentoptions {
+    display: flex;
+    flex-direction: column;
+    transition: all 1s ease;
+    margin: 0;
+}
+
+.menuoptions .contentoptions h6 {
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.menuoptions .contentoptions p {
+    font-size: 12px;
+    font-weight: 700;
+    color: gray;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.menuoptions .contentoptions p:hover {
+    color: black;
+}
+
+.firstphoto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.firstphoto a {
+    text-decoration: none;
+}
+
+.firstphoto img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.latestdrop h1,.firstphoto h1,.sneakers h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.latestdrop p,.firstphoto p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-size: 17px;
+}
+
+.latestdrop button,.firstphoto button {
+    height: 35px;
+    width: 70px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.latestdrop button:hover,.firstphoto button:hover {
+    background-color: gray;
+}
+
+.blogs {
+    height: 120vh;
+    width: 100vw;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 0;
+}
+
+.blogs .oneblog {
+    width: 100%;
+    height: 100%;
+    background-color: bisque;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    padding: 50px;
+    color: white;
+}
+
+.blogs .oneblog a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.blogs .oneblog button {
+    height: 35px;
+    width: 70px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogs .oneblog button:hover {
+    background-color: gray;
+    color: white;
+}
+
+.blog1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.3%2Ccs_srgb/h_917%2Cc_limit/5e1816fc-66e0-4f61-8901-eca90a88efc6/nike-just-do-it.jpg);
+}
+.blog2 {
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/h_917,c_limit/150c51ad-0d60-463e-88b0-0e5f9dd0c3e2/nike-just-do-it.jpg);
+}
+.blog3 {
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/h_917,c_limit/9f92ca75-828b-4e95-a581-2494fd49246c/nike-just-do-it.jpg);
+}
+.blog4 {
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.3%2Ccs_srgb/h_917%2Cc_limit/e814ebf8-dff9-41e0-bc89-2775f6eb7ad0/nike-just-do-it.jpg);
+}
+
+.latestdrop {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 0 ;
+}
+
+.latestdrop a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.latestdrop h1 {
+    font-size: 40px;
+}
+
+.collabtors {
+    width: 100vw;
+    height: 70%;
+}
+
+.collabtors img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.sneakers {
+    position: relative;
+    width: 100%;
+}
+
+.sneakers h1 {
+    font-size: 35px;
+    margin:60px 40px 20px 40px;
+}
+
+.sneakers .sneakerkinds {
+    width: 100%;
+    height: 260px;
+    display: grid;
+    grid-auto-flow: column; /* Ensures the grid items flow in a horizontal direction */
+    grid-auto-columns: minmax(220px, 2fr); /* Set a minimum and maximum size for grid items */
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.sneakers .sneakerkinds .sneaker {
+    height: 100%;
+    background-color: red;
+    margin: 2px 8px;
+}
+
+.sneakerkinds::-webkit-scrollbar {
+    display: none;
+}
+
+
+.lnrbtn {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sneakers button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    margin: 0 100px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sneakers button i {
+    font-size: 16px;
+    font-weight: 1000;
+}
+
+.sneakers button:hover {
+    background-color: rgb(187, 187, 187);
+}
+
+.sneaker1 {
+    background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1519,c_limit/52cc5902-5fed-4320-8776-0c1161c978c9/nike-just-do-it.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sneaker2 {
+    background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1519,c_limit/be5fa28d-45c2-45b5-a60f-c698163aee18/nike-just-do-it.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sneaker3 {
+    background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1519,c_limit/5f3cbf3a-61d7-4a71-a9cf-2f7679eefae1/nike-just-do-it.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sneaker4 {
+    background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1519,c_limit/a75d42ee-6142-4024-98ef-b6ed4c90909a/nike-just-do-it.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sneaker5 {
+    background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1519,c_limit/68f314a7-ad74-477e-840b-c0a1ef00a49b/nike-just-do-it.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sneaker6 {
+    background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1519,c_limit/bce4329e-4d2d-4558-8276-655299b5eb42/nike-just-do-it.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sneaker7 {
+    background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1519,c_limit/bce4329e-4d2d-4558-8276-655299b5eb42/nike-just-do-it.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.nikehelp {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.helps {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.helps h3 {
+    font-size: 17px;
+}
+
+.featurecontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.features {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    overflow: hidden;
+    padding-bottom: 100px;
+    margin-bottom: 90px;
+    transition: all 1s ease;
+}
+
+.features h5 {
+    margin-bottom: 30px;
+}
+
+.features p {
+    font-weight: 500;
+    color: gray;
+    cursor: pointer;
+}
+
+.features p:hover {
+    color: black;
+}
+
+.about {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.about .about-resources {
+    width: 100%;
+    font-size: 15px;
+}
+
+.about .about-resources h5 {
+    font-size: 15px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.about .about-resources p {
+    font-weight: 500;
+    color: gray;
+    cursor: pointer;
+}
+
+.about .globestate {
+    display: flex;
+    justify-content: end;
+    color: gray;
+}
+
+.about .globestate i {
+    margin-right: 10px;
+}
+
+
